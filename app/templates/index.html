@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="grid-container">
+    <a class="box top-left" href='{% url "management" %}'>
+        Management
+    </a>
+    <a class="box top-right" href='{% url "community" %}'>
+        Community
+    </a>
+    <a class="box bottom-left" href='{% url "documentation" %}'>
+        Documentation
+    </a>
+    <a class="box bottom-right" href='{% url "procurement" %}'>
+        Procurement
+    </a>
+</div>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class='teamname'>{{ team.teamName }} Team</h1>
+    <div class='descriptioncontainer'>
+        <p class='teamdescription'>{{ team.description }}</p>
+    </div>
+
+    <h1 class='teamname'>Meet the Members:</h1>
+    <div>
+        <ul class='teammembers'>
+            {% for teamMember in team.teamMembers%}
+               <p class='teamdescription'>• {{teamMember}}</p>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

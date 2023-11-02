@@ -1,0 +1,99 @@
+* {
+    font-family: 'Object Sans Heavy',Helvetica,Arial,Lucida,sans-serif;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.headbar {
+    background-color: #81d3ef;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+.teamlist {
+    border: 5em;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links {
+    text-decoration: underline;
+    border-radius: 5em;
+    background-color: #81d3ef;
+    color: white;
+}
+
+.grid-container {
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: 89vh;
+    width: 100vw;
+}
+
+.box {
+    background-color: #81d3ef;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+
+.teamname {
+    text-align: center;
+}
+
+.teamdescription {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.teammembers {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.descriptioncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%; 
+    margin: 0 auto; 
+}
+
+
+
+@media (max-width: 800px) {
+    .grid-container {
+        margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20pt;
+        align-items: center;
+    }
+
+    .box {
+        width: 85%;
+        height: 15%;
+    }
+
+}

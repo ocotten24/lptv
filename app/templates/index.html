@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="grid-container">
-    <a class="box top-left" href='{% url "management" %}'>
+    <a class="box top-left" href='{% url "team" name="Management" %}'>
         Management
     </a>
-    <a class="box top-right" href='{% url "community" %}'>
+    <a class="box top-right" href='{% url "team" name="Community" %}'>
         Community
     </a>
-    <a class="box bottom-left" href='{% url "documentation" %}'>
+    <a class="box bottom-left" href='{% url "team" name="Documentation" %}'>
         Documentation
     </a>
-    <a class="box bottom-right" href='{% url "procurement" %}'>
+    <a class="box bottom-right" href='{% url "team" name="Procurement" %}'>
         Procurement
     </a>
 </div>
